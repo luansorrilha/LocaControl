@@ -9,7 +9,7 @@ Projeto em desenvolvimento.
 ## Tecnologias
 
 - C#
-- .NET
+- .NET  
 - SQL Server
 - HTML
 - CSS
