@@ -1,0 +1,58 @@
+@model LocaControl.Models.Locacao
+
+@{
+    ViewData["Title"] = "Detalhes da Locação";
+}
+
+<h1>Detalhes da Locação</h1>
+
+<div>
+    <h4>Informações da Locação</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            Cliente
+        </dt>
+
+        <dd class="col-sm-10">
+            @Model.Cliente?.Nome
+        </dd>
+
+        <dt class="col-sm-2">
+            Equipamento
+        </dt>
+
+        <dd class="col-sm-10">
+            @Model.Equipamento?.Nome
+
+            <dt class="col-sm-2">
+                Data Inicial
+            </dt>
+
+            <dd class="col-sm-10">
+                @Model.DataInicio.ToString("dd/MM/yyyy HH:mm")
+            </dd>
+
+            <dt class="col-sm-2">
+                Data Final
+            </dt>
+
+            <dd class="col-sm-10">
+                @Model.DataFinal.ToString("dd/MM/yyyy HH:mm")
+            </dd>
+
+            <dt class="col-sm-2">
+                Valor Total
+            </dt>
+
+            <dd class="col-sm-10">
+                @Model.ValorTotal.ToString("C")
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+        <a asp-action="Index">Voltar para a lista</a>
+
+    </div>
