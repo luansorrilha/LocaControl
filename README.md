@@ -1,23 +1,38 @@
 # LocaControl
 
-Sistema de gestão para locadora de equipamentos desenvolvido como projeto prático para aplicação dos conhecimentos adquiridos em Análise e Desenvolvimento de Sistemas.
+Sistema web para gerenciamento de clientes, equipamentos e locações, desenvolvido em ASP.NET Core MVC com Entity Framework Core e SQL Server.
 
-## 🚧 Status
+## Status
 
-Projeto em desenvolvimento.
+MVP concluído.
 
 ## Tecnologias
 
 - C#
-- .NET  
+- ASP.NET Core MVC
+- Entity Framework Core
 - SQL Server
+- Razor
+- Bootstrap
 - HTML
 - CSS
 
-## Funcionalidades em desenvolvimento
+## Funcionalidades
 
-- Cadastro de clientes
-- Cadastro de equipamentos
-- Gestão de locações
-- Controle de disponibilidade
-- Integração com banco de dados
+- Cadastro, edição, consulta e exclusão de clientes
+- Cadastro, edição, consulta e exclusão de equipamentos
+- Gerenciamento de locações
+- Relacionamento entre clientes, equipamentos e locações
+- Seleção de cliente e equipamento através de listas
+- Integração com SQL Server através do Entity Framework Core
+- Formatação de datas e valores monetários
+
+## Arquitetura
+
+O projeto utiliza o padrão MVC (Model-View-Controller), separando
+modelos de dados, regras de controle e interface.
+
+## Banco de Dados
+
+O banco de dados foi desenvolvido em SQL Server e é gerenciado
+através do Entity Framework Core e Migrations.
